@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 16, 2022 at 08:22 PM
+-- Generation Time: Jul 16, 2022 at 08:30 PM
 -- Server version: 10.3.35-MariaDB-cll-lve
 -- PHP Version: 7.4.30
 
@@ -43,16 +43,14 @@ CREATE TABLE `cards` (
 --
 
 INSERT INTO `cards` (`id`, `column_id`, `name`, `description`, `order`, `created_at`, `updated_at`) VALUES
-(1, 1, 'sfsdf', 'sdfdsf', 1, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(2, 1, 'test', 'dsfdsfdsf', 1, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(3, 6, 'ffgfg', 'fgfg', NULL, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(4, 6, 'fdfs', 'dsf', NULL, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(5, 17, 'ssdsd', 'hfhghfgh', NULL, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(6, 17, 'sadas', 'sdxsa', NULL, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(7, 17, 'sadas', 'sad', NULL, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(8, 20, '121212', 'fsgsg', 1, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(9, 22, 'dfdf', 'dfdf', NULL, '2022-07-16 16:12:01', '2022-07-16 16:12:01'),
-(10, 22, 'adsad', 'asdsad\nfdfdfd', NULL, '2022-07-16 16:12:01', '2022-07-16 16:12:01');
+(1, 24, 'Cart 1', 'card - 1 description', 1, '2022-07-16 16:26:56', '2022-07-16 16:26:56'),
+(2, 24, 'Card - 2', 'card - 2 description', 1, '2022-07-16 16:26:56', '2022-07-16 16:26:56'),
+(3, 26, 'Card - 6', 'Card - 6 Description', 1, '2022-07-16 16:26:56', '2022-07-16 16:26:56'),
+(4, 26, 'Card - 7', 'Card 7 Description', 1, '2022-07-16 16:26:56', '2022-07-16 16:28:17'),
+(5, 26, 'Card - 8', 'Card 8 description', 1, '2022-07-16 16:26:56', '2022-07-16 16:26:56'),
+(6, 26, 'Card - 3', 'card - 3 description', 1, '2022-07-16 16:26:56', '2022-07-16 16:26:56'),
+(7, 27, 'Card - 4', 'Card 4 - Description', 1, '2022-07-16 16:26:56', '2022-07-16 16:26:56'),
+(8, 28, 'Card - 5', 'Card - 5 Description', 1, '2022-07-16 16:26:56', '2022-07-16 16:26:56');
 
 -- --------------------------------------------------------
 
@@ -72,12 +70,11 @@ CREATE TABLE `columns` (
 --
 
 INSERT INTO `columns` (`id`, `title`, `created_at`, `updated_at`) VALUES
-(1, 'Test', '2022-07-16 04:08:58', '2022-07-16 04:08:58'),
-(6, 'Test 5', '2022-07-16 04:41:49', '2022-07-16 04:41:49'),
-(11, 'sfdsf', '2022-07-16 05:28:20', '2022-07-16 09:51:01'),
-(17, '232cscs', '2022-07-16 06:03:17', '2022-07-16 09:55:35'),
-(20, 'dfcds', '2022-07-16 11:12:29', '2022-07-16 11:12:29'),
-(22, '223', '2022-07-16 11:31:46', '2022-07-16 11:31:46');
+(24, 'Column - 1', '2022-07-16 16:23:41', '2022-07-16 16:23:41'),
+(25, 'Column - 2', '2022-07-16 16:23:52', '2022-07-16 16:23:52'),
+(26, 'Column - 3', '2022-07-16 16:23:59', '2022-07-16 16:23:59'),
+(27, 'Column - 4', '2022-07-16 16:24:07', '2022-07-16 16:24:07'),
+(28, 'Column - 5', '2022-07-16 16:24:18', '2022-07-16 16:24:18');
 
 -- --------------------------------------------------------
 
@@ -225,13 +222,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cards`
 --
 ALTER TABLE `cards`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `columns`
 --
 ALTER TABLE `columns`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
